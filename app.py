@@ -30,7 +30,7 @@ corona_df.apply(lambda x:circle_maker(x),axis=1)
 html_map=m._repr_html_()
 from flask import Flask,render_template
 from gevent.pywsgi import WSGIServer
-set Flask_ENV=development
+
 app=Flask(__name__)
 
 @app.route('/')
